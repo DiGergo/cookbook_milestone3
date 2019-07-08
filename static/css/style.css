@@ -1,0 +1,10 @@
+body {
+    filter: grayscale(50%);
+}
+.motto {
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: #fcb1b1;
+}

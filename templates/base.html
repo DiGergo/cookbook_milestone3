@@ -8,14 +8,43 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
     
     <title>Hmmm...Sooo Good</title>
 </head>
-<body>
-    <h1>The only thing I like better than talking about food is EATING!</h1>
-    <h4>- John Walters</h4>
+<body style= "background-image: url('static/images/background-1.jpg');">
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="{{url_for('get_recipes')}}" class="brand-logo">Hmmm...Soo Good</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="{{url_for('get_recipes')}}">Home</a></li>
+                <li><a href="{{url_for('get_recipes')}}">Most Liked</a></li>
+                <li><a href="{{url_for('get_recipes')}}">Add Recipe</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="{{url_for('get_recipes')}}">Home</a></li>
+                <li><a href="{{url_for('get_recipes')}}">New Task</a></li>
+                <li><a href="{{url_for('get_recipes')}}">Manage Categories</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 class="motto">The only thing I like better than talking about food is EATING!</h1>
+    <h4 class="motto">- John Walters</h4>
     {% block content %}
-    
+        <div class="row">
+          <div class="column">
+            <img src='/static/images/fruit.jpg' alt="Fruit" style="width:100%">
+          </div>
+          <!--<div class="column">
+            <img src="img_forest.jpg" alt="Forest" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+          </div>-->
+        </div>
     {% endblock %}
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
