@@ -16,10 +16,24 @@ def get_categories():
     return render_template("categories.html", categories=mongo.db.categories.find())
 
 
-
 @app.route('/get_recipes')
 def get_recipes():
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
+    
+    
+@app.route('/add_recipe')
+def add_recipe():
+    return render_template('add_recipe.html',
+    recipes=mongo.db.recipes.find(),
+    categories=mongo.db.categories.find(),
+    time_to_prep=mongo.db.time_to_prep.find(),
+    cost=mongo.db.cost.find())
+    
+@app.route('/insert_recipe', methods=['POST'])
+def insert_recipes():
+    recipes = mongo.db.recipes
+    recipes.insert_one(request.form.to_dict())
+    return redirect(url_for('get_recipes'))
     
 if __name__ == '__main__' :
     app.run(host=os.environ.get('IP'),
