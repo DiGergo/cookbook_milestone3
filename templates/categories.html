@@ -1,0 +1,112 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+    <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/food.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  
+  <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/fruit.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    
+  <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/pasta.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/meat.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  
+  <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/salad.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/sea-food.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s6 m4">
+      <div class="card large">
+        <div class="card-image food-pic">
+          <img src="../static/images/dessert.jpg">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+{% for category in categories %} {{category.category_name}} {% endfor %} {% endblock %}

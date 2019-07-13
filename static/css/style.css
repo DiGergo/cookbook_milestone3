@@ -1,10 +1,28 @@
 body {
-    filter: grayscale(50%);
+    filter: grayscale(30%);
 }
 .motto {
+    text-align: center;
+    font-size: 3em;
+}
+
+.motto-2 {
+    font-size: 2em;
     text-align: center;
 }
 
 .nav-wrapper {
-    background-color: #fcb1b1;
+    background-color: skyblue;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.food-pic{
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
 }
