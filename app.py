@@ -24,7 +24,7 @@ def get_categories():
 @app.route('/get_recipes')
 def get_recipes():
     return render_template("recipes.html", 
-    recipes=mongo.db.recipes.find({'category_name': 'Dessert'}))    
+    recipes=mongo.db.recipes.find())    
 
 
 @app.route('/get_desserts')
@@ -35,12 +35,30 @@ def get_desserts():
 @app.route('/get_fish')
 def get_fish():
     return render_template("recipes.html", 
-    recipes=mongo.db.recipes.find({'category_name': 'Dessert'}))
+    recipes=mongo.db.recipes.find({'category_name': 'Fish'}))
     
 @app.route('/get_pastas')
 def get_pastas():
     return render_template("recipes.html", 
     recipes=mongo.db.recipes.find({'category_name': 'Pasta'}))    
+    
+    
+@app.route('/get_meat')
+def get_meat():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Meat'}))   
+    
+    
+@app.route('/get_salad')
+def get_salad():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Salad'}))  
+    
+    
+@app.route('/get_fruit')
+def get_fruit():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Fruit'}))    
     
     
 @app.route('/add_recipe')
@@ -55,7 +73,7 @@ def add_recipe():
 def insert_recipes():
     recipes = mongo.db.recipes
     recipes.insert_one(request.form.to_dict())
-    return redirect(url_for('get_recipes'))
+    return redirect(url_for('get_categories'))
     
 if __name__ == '__main__' :
     app.run(host=os.environ.get('IP'),
