@@ -31,3 +31,19 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
+
+.card.large {
+    margin: 20px;
+}
+
+.categories-row {
+    width: 90%;
+}
+
+.add-header {
+    margin-left: 3em;
+}
+
+.add-row {
+    width: 70%;
+}
