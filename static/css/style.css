@@ -47,3 +47,7 @@ body {
 .add-row {
     width: 70%;
 }
+
+.index-body {
+    background: url("..static/images/background-1.jpg");
+}
