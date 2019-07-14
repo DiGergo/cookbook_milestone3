@@ -19,11 +19,28 @@ def get_home():
 @app.route('/categories')
 def get_categories():
     return render_template("categories.html", categories=mongo.db.categories.find())
-
-
+    
+    
 @app.route('/get_recipes')
 def get_recipes():
-    return render_template("recipes.html", recipes=mongo.db.recipes.find())
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Dessert'}))    
+
+
+@app.route('/get_desserts')
+def get_desserts():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Dessert'}))
+    
+@app.route('/get_fish')
+def get_fish():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Dessert'}))
+    
+@app.route('/get_pastas')
+def get_pastas():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'category_name': 'Pasta'}))    
     
     
 @app.route('/add_recipe')
