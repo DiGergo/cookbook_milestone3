@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+    <h1>{{recipe.recipe_name}}</h1>
+    <div class="row">
+        <div class="col s6 m3">
+          <div class="card small">
+            <div class="card-image food-pic">
+              <img src="../static/images/table.jpg">
+            </div>
+            <div class="card-content">
+              <p>{{recipe.category_name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m9">
+           <h5>{{recipe.comments}}</h5> 
+          {{recipe.time_to_prepare}}
+        </div>
+    </div>
+
+{% endblock %}
