@@ -50,6 +50,14 @@
     width: 40%;
 }
 
-.index-body {
-    background: url("..static/images/background-1.jpg");
+
+.index-bg {
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
