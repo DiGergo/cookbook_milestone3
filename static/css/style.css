@@ -1,4 +1,4 @@
-
+/* --------------------- Header */
 .motto {
     text-align: center;
     font-size: 3em;
@@ -10,17 +10,28 @@
 }
 
 .brand-logo{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .nav-wrapper {
-    background-color: skyblue;
+    background-color: #537d91;
 }
 
-.col {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.add-header {
+    margin-left: 3em;
+}
+
+/* ---------------------------------------Images */
+
+.index-bg {
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .food-pic{
@@ -34,16 +45,25 @@
     max-width: 100%;
 }
 
+/* ---------------------------------------Cards */
+
 .card.large {
     margin: 20px;
+    background: #e3e3e3;
+}
+
+.card_text {
+    color: #f77754;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 .categories-row {
     width: 90%;
-}
-
-.add-header {
-    margin-left: 3em;
 }
 
 .add-row {
@@ -54,14 +74,19 @@
     width: 40%;
 }
 
+/* ------------------------------------ Recipe page */
 
-.index-bg {
+.recipe_header {
+    text-align: center;
+    color: #f77754;
+}
 
-  /* Full height */
-  height: 100%; 
+.instructions {
+    text-align: center;
+    color: #f77754;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.ingredients {
+    text-align: center;
+    color: #f77754;
 }
