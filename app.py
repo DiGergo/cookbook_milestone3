@@ -31,7 +31,12 @@ def view_recipe(recipe_id):
     the_recipe=mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("recipe.html", recipe=the_recipe)
 
-
+'''
+@app.route('/get_search')
+def get_search():
+    return render_template("recipes.html", 
+    recipes=mongo.db.recipes.find({'recipe_name' : 'Dessert'}))
+'''
 @app.route('/get_desserts')
 def get_desserts():
     return render_template("recipes.html", 

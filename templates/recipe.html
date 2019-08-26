@@ -1,7 +1,7 @@
 {% extends 'base.html' %} 
 {% block content %}
 
-    <h1>{{recipe.recipe_name}}</h1>
+    <h3>{{recipe.recipe_name}}</h3>
     <div class="row">
         <div class="col s6 m3">
           <div class="card small">
@@ -14,8 +14,10 @@
           </div>
         </div>
         <div class="col s6 m9">
-           <h5>{{recipe.comments}}</h5> 
-          {{recipe.time_to_prepare}}
+           <h5>{{recipe.uploader}}'s comments : {{recipe.comments}}</h5> 
+          <p>Time to prepare: {{recipe.time_to_prepare}} </p>
+          <p>Instructions: {{recipe.instructions}}</p>
+          <p>Ingredients: {{recipe.ingredients}}</p>
         </div>
     </div>
 

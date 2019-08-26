@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.brand-logo{
+    margin-left: 10px;
+}
+
 .nav-wrapper {
     background-color: skyblue;
 }
