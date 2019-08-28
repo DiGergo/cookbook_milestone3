@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700');
+
 /* --------------------- Header */
 .motto {
     text-align: center;
     font-size: 3em;
+    font-family: "Oswald";
+    color: white;
 }
 
 .motto-2 {
     font-size: 2em;
     text-align: center;
+    font-family: "Oswald";
+    color: white;
 }
 
 .brand-logo {
