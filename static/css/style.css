@@ -58,6 +58,11 @@
     background: #e3e3e3;
 }
 
+.card-image{
+    height: 400px; 
+    overflow: hidden;
+}
+
 .card_text {
     color: #f77754;
 }
@@ -95,4 +100,8 @@
 .ingredients {
     text-align: center;
     color: #f77754;
+}
+
+.back_to_recepies {
+    margin-top: 15px;
 }
