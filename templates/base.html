@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
     <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}">
     
     <title>Hmmm...Sooo Good</title>
@@ -43,10 +43,26 @@
         
     {% endblock %}
     
-    
-    <div class="footer">
-        <p>Hello footer</p>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer">
+                <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/gergo.okos">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://github.com/DiGergo">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHUb</span>
+                        </a>
+                        </li>
+                </ul>
+            </div>
+        </div>    
+    </div>    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
