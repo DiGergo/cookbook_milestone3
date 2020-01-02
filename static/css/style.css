@@ -117,25 +117,17 @@ a {
 
 /*-----------------------------Footer */
 
-.footer {
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  position: fixed;
-}
-
 .social-links {
     padding-bottom: 15px;
     text-align: center;
 }
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-    padding: 12px 0;
-    font-size: 13px;
+    padding: 18px 0;
+    font-size: 23px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
@@ -144,4 +136,9 @@ a {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
+
+.list-inline-item {
+    display: inline-flex;
+    padding-right: 20px;
 }
