@@ -79,6 +79,11 @@ def add_recipe():
     time_to_prep=mongo.db.time_to_prep.find(),
     cost=mongo.db.cost.find())
     
+    
+@app.route('/shop')   
+def get_shop():
+    return render_template("shop.html") 
+    
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipes():
     recipes = mongo.db.recipes

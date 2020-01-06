@@ -15,22 +15,24 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
     <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}">
     
-    <title>Hmmm...Sooo Good</title>
+    <title>...Sooo Good</title>
 </head>
 <body style= "background-color: #a4d1c8" >
     <header>
         <nav>
             <div class="nav-wrapper">
-              <a href="{{url_for('get_home')}}" class="brand-logo waves-effect">Hmmm...Soo Good</a>
+              <a href="{{url_for('get_home')}}" class="brand-logo waves-effect">...Soo Good</a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="waves-effect" href="{{url_for('get_categories')}}">Categories</a></li>
                 <li><a class="waves-effect" href="{{url_for('get_recipes')}}">Recipes</a></li>
+                <li><a class="waves-effect" href="{{url_for('get_shop')}}">Shop</a></li>
                 <li><a class="waves-effect" href="{{url_for('add_recipe')}}">Add Recipe</a></li>
               </ul>
               <ul class="side-nav" id="mobile-demo">
                 <li><a href="{{url_for('get_categories')}}">Categories</a></li>
                 <li><a href="{{url_for('get_recipes')}}">Recipes</a></li>
+                <li><a href="{{url_for('get_shop')}}">Shop</a></li>
                 <li><a href="{{url_for('add_recipe')}}">Add Recipe</a></li>
               </ul>
             </div>
