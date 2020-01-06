@@ -84,6 +84,13 @@ def add_recipe():
 def get_shop():
     return render_template("shop.html") 
     
+
+@app.route('/edit/<recipe_id>')
+def get_edit(recipe_id):
+    the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
+    return render_template('edit.html', recipe= the_recipe)
+    
+    
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipes():
     recipes = mongo.db.recipes
