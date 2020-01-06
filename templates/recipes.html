@@ -16,10 +16,11 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m9">
+        <div class="col s6 m9 recipe-head">
           <h3>{{recipe.recipe_name}}</h3>
           {{recipe.category_name}}
-          {{recipe.time_to_prepare}}
+          <p><span class="far fa-clock"></span>  {{recipe.time_to_prepare}}</p>
+          <p><span class="fas fa-pound-sign"></span>  {{recipe.costs}}</p>
           
         </div>
     </div>
